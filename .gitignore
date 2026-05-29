@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+prospect.json
+contacts.json
+node_modules/
+package-lock.json
