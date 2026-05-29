@@ -88,7 +88,14 @@ Cấu trúc file báo cáo bao gồm:
    - Nội dung email chào hàng (copy-paste ready, cá nhân hóa sâu sắc).
    - Đề xuất giải pháp kỹ thuật cụ thể mà HILAB nên chào bán.
 
-### 3.2. Hiển thị Scorecard trên Terminal
+### 3.2. Xuất bản tài liệu Word chuẩn HILAB (`.docx`)
+Sau khi hoàn thành file Markdown, Agent có thể chạy script Node.js đi kèm để tự động biên dịch sang file Word (.docx) chuẩn nhận diện thương hiệu HILAB (Tiêu đề Fire Red #CE2029, phông chữ Open Sans & Inter, đính kèm logo HILAB ở Header, footer thông tin công ty và số trang):
+```bash
+node /Users/jamesduy/.gemini/config/skills/hilab-sales-prospector/scripts/generate_docx_report.js --input <path_to_markdown> --output <path_to_docx>
+```
+Hãy chủ động đề xuất xuất file Word cho user sau khi phân tích xong để mang lại trải nghiệm chuyên nghiệp nhất.
+
+### 3.3. Hiển thị Scorecard trên Terminal
 Khi kết thúc tác vụ, in ra một bảng scorecard tóm tắt đẹp mắt bằng Unicode để người dùng nắm nhanh trạng thái:
 ```
 ============================================
